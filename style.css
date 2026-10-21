@@ -226,3 +226,7 @@ ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color:
 .yomu li small { display: inline-block; margin-right: 0.4rem; color: var(--gold); font-weight: 700; }
 .yomu-before { color: var(--ink-soft) !important; text-decoration: line-through; text-decoration-color: var(--line); }
 .yomu li small.yomu-where { display: block; margin: 0.1rem 0 0; color: var(--ink-soft); font-weight: 400; font-size: 0.75rem; }
+.yomu-preview { background: var(--card); border: 1px dashed var(--line); border-radius: 10px; padding: 0.6rem 0.8rem; margin-top: 0.4rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.yomu-preview p.yomu-where { color: var(--ink-soft); font-size: 0.75rem; margin: 0; }
+.yomu-lv > b { display: inline-block; font-size: 0.75rem; color: var(--gold); margin-bottom: 0.1rem; }
+.yomu-lv p { margin: 0.2rem 0 0; }
