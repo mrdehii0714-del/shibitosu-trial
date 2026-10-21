@@ -159,7 +159,8 @@ input[type=date], select {
 .sec-voice p { font-family: var(--f-display); font-weight: 600; font-size: var(--step-1); }
 
 /* 読み仮名 */
-ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color: var(--ink-soft); letter-spacing: 0.02em; }
+ruby { ruby-align: center; }
+ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color: var(--ink-soft); letter-spacing: 0; }
 .today-head span rt, .center-name rt { color: var(--ink-soft); }
 
 /* 今日の部屋 */
@@ -224,3 +225,4 @@ ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color:
 .yomu li p { margin-top: 0.3rem; color: var(--ink); }
 .yomu li small { display: inline-block; margin-right: 0.4rem; color: var(--gold); font-weight: 700; }
 .yomu-before { color: var(--ink-soft) !important; text-decoration: line-through; text-decoration-color: var(--line); }
+.yomu li small.yomu-where { display: block; margin: 0.1rem 0 0; color: var(--ink-soft); font-weight: 400; font-size: 0.75rem; }
