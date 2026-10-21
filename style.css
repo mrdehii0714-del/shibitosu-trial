@@ -301,3 +301,18 @@ ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color:
 .hero-img img { width: auto; max-width: 100%; max-height: 70vh; }
 /* 盤を全幅で出すようになったので、見出しの星の名前は1行に */
 .today-head span { display: inline; font-size: 1.3em; margin-inline: 0.15em; }
+
+/* 10/22 ひでさん「文字が全体的に小さい」：全体を1段大きく。真ん中の紙芝居とまとめは、盤の外にはみ出してよいので大きく */
+html { font-size: 112.5%; }
+.center { z-index: 3; overflow: visible; }
+.kami { width: 100%; }
+.kami .bubble, .center .summary { width: min(88vw, 26rem); max-width: none; position: relative; z-index: 3; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18); }
+.kami .bubble { font-size: 1.05rem; padding: 0.55rem 0.8rem; }
+.kami.sz-3 .bubble { font-size: 1.2rem; } .kami.sz-1 .bubble { font-size: 0.98rem; }
+.kami .rel { width: min(88vw, 26rem); font-size: 0.85rem; background: var(--card); border-radius: 10px; padding: 0.35rem 0.6rem; position: relative; z-index: 3; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); }
+.kami .spk-who b { font-size: 1.15rem; }
+.kami .role { font-size: 0.8rem; }
+.center .summary { font-size: 1.05rem; padding: 0.7rem 0.9rem; }
+.center .tap { font-size: 0.8rem; }
+.center .center-name { font-size: var(--step-2); }
+@media (min-width: 560px) { .kami .bubble, .center .summary { font-size: 1.15rem; } }
