@@ -136,7 +136,7 @@ var Ua=Object.create;var On=Object.defineProperty;var $a=Object.getOwnPropertyDe
       <ul class="core">${e.core.map(t=>`<li>${a0(t)}</li>`).join("")}</ul>
       <p class="hook">${f0(zn(n))}</p>
     </div>
-  </section>`}var G6=new Set(["sd_details"]),Z6=new Set(["introduction","personality","scenarios","voice"]);function Xa(n){let e=A0[n];if(Xe()==="easy"){let t=X2[n],u=e.sections.find(i=>i.id==="voice");return`<article class="body">
+  </section>`}var G6=new Set(["sd_details","teamwork"]),Z6=new Set(["introduction","personality","scenarios","voice"]);function Xa(n){let e=A0[n];if(Xe()==="easy"){let t=X2[n],u=e.sections.find(i=>i.id==="voice");return`<article class="body">
       <section class="sec"><h2>\u3069\u3093\u306A\u661F\uFF1F</h2>${t.intro.map(i=>`<p>${f0(i)}</p>`).join("")}</section>
       <section class="sec"><h2>\u3053\u3093\u306A\u3068\u304D\u306B\u9854\u3092\u51FA\u3059</h2><ul class="scenes">${t.scenes.map(i=>`<li><b>${f0(i.label)}</b>${f0(i.text)}</li>`).join("")}</ul></section>
       ${u?`<section class="sec sec-voice"><h2>${a0(u.title)}</h2>${u.blocks.map(za).join("")}</section>`:""}
