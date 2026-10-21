@@ -252,12 +252,29 @@ ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color:
 .center-imgs img.sub { position: absolute; right: -6%; bottom: 0; width: 55%; height: 62%; }
 .center .center-name { font-size: var(--step-1); }
 
+/* 今日の会議：盤の真ん中で紙芝居（10/22） */
+.board-lines line { opacity: 0.45; transition: opacity 0.3s, stroke-width 0.3s; }
+.board-lines line.base { stroke-dasharray: 3 4; }
+.board-lines line.on { opacity: 1; stroke-width: 4; stroke-dasharray: none; }
+.center { cursor: pointer; justify-content: flex-start; gap: 0.15rem; padding: 0.3rem 0.2rem; border-radius: 12px; -webkit-tap-highlight-color: transparent; }
+.center > * { margin: 0; }
+.center .tap { font-size: 0.68rem; color: var(--ink-soft); line-height: 1.4; }
+.center .summary { font-size: 0.82rem; padding: 0.45rem 0.55rem; text-align: left; }
+.kami { display: flex; flex-direction: column; align-items: center; gap: 0.1rem; width: 100%; animation: pop 0.4s ease-out both; }
+.kami > * { margin: 0; }
+.kami-img { width: 46%; aspect-ratio: 1; object-fit: contain; }
+.kami.sz-3 .kami-img { width: 58%; } .kami.sz-1 .kami-img { width: 38%; }
+.kami .bubble { font-size: 0.8rem; padding: 0.35rem 0.55rem; text-align: left; line-height: 1.55; }
+.kami.sz-3 .bubble { font-size: 0.92rem; } .kami.sz-1 .bubble { font-size: 0.74rem; }
+.kami .bubble::before { left: 50%; top: -7px; transform: translateX(-50%) rotate(135deg); }
+.kami .rel { font-size: 0.68rem; color: var(--ink-soft); text-align: left; line-height: 1.5; }
+.kami .spk-who { justify-content: center; }
+.kami .role { font-size: 0.68rem; }
+@media (min-width: 560px) { .kami .bubble { font-size: 0.95rem; } .center .summary { font-size: 0.95rem; } .center .tap { font-size: 0.8rem; } }
+.legend ul { margin: 0.3rem 0 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.3rem; font-size: 0.88rem; }
+.legend li b { display: block; font-size: 0.82rem; color: var(--gold); }
+.meet-all .spks { margin-top: 0.5rem; }
 /* 今日の会議 */
-.meeting { padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: 0.7rem; }
-.meet-how { color: var(--ink-soft); font-size: 0.85rem; margin: 0; }
-.meet-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.25rem; background: var(--sky); border-radius: 999px; padding: 0.2rem; }
-.meet-tabs button { font: inherit; font-size: 0.85rem; font-weight: 700; border: 0; background: none; color: var(--ink-soft); border-radius: 999px; padding: 0.35rem 0; cursor: pointer; }
-.meet-tabs button[aria-selected="true"] { background: var(--ink); color: var(--sky); }
 .spks { display: flex; flex-direction: column; gap: 0.6rem; }
 .spk { display: grid; grid-template-columns: var(--im) 1fr; gap: 0.5rem; align-items: center; --im: 4.4rem; }
 .spk img { width: var(--im); height: var(--im); object-fit: contain; }
@@ -275,15 +292,11 @@ ruby rt { font-family: var(--f-body); font-weight: 400; font-size: 0.5em; color:
 .sz-1 .bubble { font-size: 0.88rem; }
 .md-0 .bubble { border-color: #c96a2b; } .md-1 .bubble { border: 2px solid #b23a3a; font-weight: 800; } .md-2 .bubble { border-color: #3f7a8c; } .md-3 .bubble { border-style: dashed; color: var(--ink-soft); font-weight: 500; }
 .summary { margin: 0; padding: 0.6rem 0.9rem; border-left: 3px solid var(--gold); background: var(--gold-soft); border-radius: 0 10px 10px 0; font-family: var(--f-display); font-weight: 700; line-height: 1.7; }
-.kami { min-height: 9rem; display: flex; align-items: center; animation: rise 0.4s ease-out both; }
-.kami .spk { width: 100%; }
-.kami-ctl { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
 .dots { display: flex; gap: 0.3rem; }
 .dots i { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--line); }
 .dots i.on { background: var(--gold); }
-.spks.anime > * { opacity: 0; animation: pop 0.55s ease-out forwards; animation-delay: calc(var(--k) * 1.1s + 0.2s); }
 @keyframes pop { from { opacity: 0; transform: translateY(8px) scale(0.96); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) { .cell.today, .cell.speaking { animation: none; box-shadow: 0 0 0 3px var(--gold-soft); } .spks.anime > * { animation: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .cell.today, .cell.speaking { animation: none; box-shadow: 0 0 0 3px var(--gold-soft); } }
 .hero-img { display: flex; justify-content: center; }
 .hero-img img { width: auto; max-width: 100%; max-height: 70vh; }
 /* 盤を全幅で出すようになったので、見出しの星の名前は1行に */
