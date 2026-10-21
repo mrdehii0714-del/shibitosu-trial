@@ -40,12 +40,18 @@ a { color: inherit; }
 /* 上の帯 */
 .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sky); border-bottom: 1px solid var(--line); margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
 .top-in { display: flex; align-items: center; gap: 0.5rem; padding-block: 0.6rem; }
-.top-in .logo { margin-right: auto; }
+.top-in .logo { margin-right: auto; white-space: nowrap; }
+.back, .link, .lvl { white-space: nowrap; }
 .back { font: inherit; font-weight: 700; font-size: 0.95rem; background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 999px; padding: 0.35rem 0.8rem; cursor: pointer; min-height: 2.4rem; }
 .top-right { display: flex; align-items: center; gap: 0.25rem; }
 .lvl { display: flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; color: var(--ink-soft); }
 .lvl select { font-size: 0.85rem; min-height: 2.2rem; padding: 0.2rem 0.4rem; width: auto; }
-@media (max-width: 400px) { .lvl > span { display: none; } .logo { font-size: 1rem; } }
+@media (max-width: 480px) {
+  .lvl > span { display: none; }
+  .logo { font-size: 1rem; letter-spacing: 0.04em; }
+  .back { padding-inline: 0.6rem; }
+  #reset { display: none; } /* 狭い画面では、入力を消すは「自分の星」の画面の下に出す */
+}
 .logo { font-family: var(--f-display); font-weight: 800; font-size: var(--step-1); text-decoration: none; letter-spacing: 0.08em; display: flex; gap: 0.4em; align-items: center; }
 .logo-mark { color: var(--gold); }
 .link { background: none; border: 0; color: var(--ink-soft); font: inherit; font-size: 0.85rem; text-decoration: underline; cursor: pointer; padding: 0.4rem; }
@@ -91,7 +97,7 @@ input[type=date], select {
 }
 .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
 .seg3 { grid-template-columns: repeat(3, 1fr); }
-.seg3 span { font-size: 0.9rem; padding-inline: 0.25rem; }
+.seg3 span { font-size: 0.85rem; padding-inline: 0.2rem; white-space: nowrap; }
 .seg label { position: relative; }
 .seg input { position: absolute; opacity: 0; inset: 0; }
 .seg span { display: block; text-align: center; padding: 0.65rem; border: 1px solid var(--line); border-radius: 10px; background: var(--sky); cursor: pointer; }
