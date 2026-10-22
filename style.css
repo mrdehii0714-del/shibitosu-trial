@@ -382,3 +382,6 @@ html { font-size: 112.5%; }
 .cell-moods { position: absolute; top: 1.55rem; right: 3px; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; z-index: 2; }
 .cell-mood { font-size: 0.6rem; padding: 0 0.35rem; line-height: 1.5; }
 .cell-moods:empty { display: none; }
+
+.cell-mood { border: 0; font: inherit; font-size: 0.6rem; font-weight: 700; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.25); }
+.callout-voice { font-family: var(--f-display); font-weight: 600; color: var(--ink-soft); }
