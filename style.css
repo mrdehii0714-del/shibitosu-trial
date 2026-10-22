@@ -364,3 +364,15 @@ html { font-size: 112.5%; }
 .ex { display: block; margin-top: 0.3rem; padding: 0.35rem 0.6rem; background: var(--gold-soft); border-radius: 8px; font-size: 0.92rem; }
 .guide-link { margin: 0; text-align: right; font-size: 0.88rem; }
 .guide-link a { color: var(--gold); font-weight: 700; }
+
+/* 会議に出る4部屋の図 */
+.mini { width: 100%; max-width: 22rem; align-self: center; }
+.mini rect { fill: var(--card); stroke: var(--line); stroke-width: 1.5; }
+.mini text { font-size: 15px; text-anchor: middle; fill: var(--ink-soft); font-weight: 700; }
+.mini .on rect { stroke: var(--gold); stroke-width: 3; fill: var(--gold-soft); }
+.mini .on text { fill: var(--ink); font-size: 17px; }
+.mini .on text.role { fill: var(--gold); font-size: 15px; }
+.mini .main rect { stroke-width: 5; }
+.mini line { stroke: var(--gold); stroke-width: 3; }
+.mini line.l-tri { stroke-dasharray: 8 6; }
+.more-link { color: var(--gold); font-weight: 700; }
