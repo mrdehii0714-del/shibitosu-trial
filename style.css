@@ -362,7 +362,7 @@ html { font-size: 112.5%; }
 .guide-list { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.5rem; }
 .guide-list li b { display: block; font-family: var(--f-display); color: var(--gold); }
 .ex { display: block; margin-top: 0.3rem; padding: 0.35rem 0.6rem; background: var(--gold-soft); border-radius: 8px; font-size: 0.92rem; }
-.guide-link { margin: 0; text-align: right; font-size: 0.88rem; }
+.guide-link { margin: 0; font-size: 0.88rem; }
 .guide-link a { color: var(--gold); font-weight: 700; }
 
 /* 会議に出る4部屋の図 */
@@ -379,6 +379,6 @@ html { font-size: 112.5%; }
 
 /* 盤の気分の印：その星がいる部屋の右上に（借りた星の部屋には出さない） */
 .cell { position: relative; }
-.cell-moods { position: absolute; top: 2px; right: 2px; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; z-index: 2; }
+.cell-moods { position: absolute; top: 1.55rem; right: 3px; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; z-index: 2; }
 .cell-mood { font-size: 0.6rem; padding: 0 0.35rem; line-height: 1.5; }
 .cell-moods:empty { display: none; }
