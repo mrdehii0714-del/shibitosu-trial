@@ -376,3 +376,9 @@ html { font-size: 112.5%; }
 .mini line { stroke: var(--gold); stroke-width: 3; }
 .mini line.l-tri { stroke-dasharray: 8 6; }
 .more-link { color: var(--gold); font-weight: 700; }
+
+/* 盤の気分の印：その星がいる部屋の右上に（借りた星の部屋には出さない） */
+.cell { position: relative; }
+.cell-moods { position: absolute; top: 2px; right: 2px; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; z-index: 2; }
+.cell-mood { font-size: 0.6rem; padding: 0 0.35rem; line-height: 1.5; }
+.cell-moods:empty { display: none; }
