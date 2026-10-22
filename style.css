@@ -419,3 +419,7 @@ body.touring::before { content: ""; position: fixed; inset: 0; background: rgb(1
 .top.tour-lift .back, .top.tour-lift .logo, .top.tour-lift .nav, .top.tour-lift #reset { opacity: 0.18; }
 .top.tour-lift #levelWrap { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 10px; }
 .tour-card.bottom { top: auto; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
+/* 10/23 ひでさん「文章が真ん中に来るように」：まとめの時は、盤の真ん中の上下中央に置く */
+.center:has(> .summary) { justify-content: center; }
+/* 10/23 ひでさん「線が見にくい　白線に変えて」：はじめての説明で、暗くした盤の上の線を白に */
+.board.tour .board-lines line, .board.tour .board-lines polygon { stroke: #fff; }
