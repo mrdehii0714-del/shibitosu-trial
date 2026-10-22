@@ -409,10 +409,9 @@ body.touring::before { content: ""; position: fixed; inset: 0; background: rgb(1
 .board.tour.t-all .board-lines, .board.tour.t-lines .board-lines { opacity: 1; }
 .board.tour.t-lines .board-lines line { opacity: 1; stroke-width: 4; animation: blink 0.7s ease-in-out infinite alternate; }
 .board.tour.t-star .cell.t-on .cell-stars { color: var(--gold); font-weight: 800; transform: scale(1.15); transform-origin: left bottom; }
-.tour-card { position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 30; max-width: 34rem; margin-inline: auto; background: var(--card); color: var(--ink); border: 2px solid var(--gold); border-radius: 14px; padding: 0.8rem 1rem; box-shadow: 0 8px 28px rgb(0 0 0 / 0.35); }
-.tour-card.top { bottom: auto; top: calc(16px + env(safe-area-inset-top, 0px)); }
+.tour-card { position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); top: calc(10px + env(safe-area-inset-top, 0px)); z-index: 30; max-width: 34rem; margin-inline: auto; background: var(--card); color: var(--ink); border: 2px solid var(--gold); border-radius: 14px; padding: 0.6rem 0.9rem; box-shadow: 0 8px 28px rgb(0 0 0 / 0.35); }
 .tour-n { margin: 0; font-size: 0.75rem; color: var(--gold); font-weight: 700; letter-spacing: 0.1em; }
-.tour-text { margin: 0.2rem 0 0.6rem; font-weight: 700; font-size: 1.05rem; line-height: 1.7; }
+.tour-text { margin: 0.1rem 0 0.4rem; font-weight: 700; font-size: 1rem; line-height: 1.65; }
 .tour-btns { display: flex; justify-content: space-between; align-items: center; }
 .tour-again { font-size: 0.82rem; padding: 0; }
 @media (prefers-reduced-motion: reduce) { .board.tour.t-lines .board-lines line { animation: none; } }
