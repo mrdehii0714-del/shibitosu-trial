@@ -59,7 +59,7 @@ a { color: inherit; }
 .confirm > div { display: flex; gap: 0.5rem; }
 
 /* 切り替え */
-.nav { max-width: 40rem; margin-inline: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.25rem; padding-bottom: 0.5rem; }
+.nav { max-width: 40rem; margin-inline: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; padding-bottom: 0.5rem; }
 .nav a { text-align: center; text-decoration: none; padding: 0.45rem 0.25rem; border-radius: 999px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--sky); }
 
@@ -385,3 +385,9 @@ html { font-size: 112.5%; }
 
 .cell-mood { border: 0; font: inherit; font-size: 0.6rem; font-weight: 700; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.25); }
 .callout-voice { font-family: var(--f-display); font-weight: 600; color: var(--ink-soft); }
+
+/* 相性（10/22） */
+.aisho-stars { display: flex; justify-content: center; gap: 0.75rem; margin: 1rem 0 0.5rem; }
+.aisho-stars a { text-align: center; text-decoration: none; color: var(--ink); }
+.aisho-stars img { width: 7.5rem; height: 7.5rem; object-fit: contain; display: block; margin-inline: auto; }
+.aisho-stars b { font-family: var(--f-display); font-size: 1.15rem; }
