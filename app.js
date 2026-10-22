@@ -158,7 +158,7 @@ var C5=Object.create;var Vn=Object.defineProperty;var D5=Object.getOwnPropertyDe
   </section>
   <div class="actions"><a class="btn ghost" href="#me">\u81EA\u5206\u306E\u661F\u306B\u3082\u3069\u308B</a></div>`,l5(t,i)}function B7(){let n=l1();if(!n)return H0("input");if(Z0(n)==null)return H0("pick");let t=xe({date:n.date,hour:Z0(n),gender:n.gender}).find(i=>i.name==="\u592B\u59BB"),u=Y1.\u592B\u59BB.match;G0.innerHTML=`
   <p class="eyebrow">\u76F8\u6027</p>
-  <h1 class="title">\u3042\u306A\u305F\u306B\u5408\u3044\u3084\u3059\u3044\u76F8\u624B</h1>
+  <h1 class="title">\u3042\u306A\u305F\u306B<br>\u5408\u3044\u3084\u3059\u3044\u76F8\u624B</h1>
   <p class="lead">${P("\u547D\u76E4\u306E\u300C\u592B\u59BB\u300D\u306E\u90E8\u5C4B\u306F\u3001\u30D1\u30FC\u30C8\u30CA\u30FC\u3084\u604B\u4EBA\u3068\u5411\u304D\u5408\u3046\u3068\u304D\u306E\u3042\u306A\u305F\u3092\u8868\u3057\u307E\u3059\u3002\u3053\u3053\u306B\u3044\u308B\u661F\u304B\u3089\u3001\u3042\u306A\u305F\u304C\u5FC3\u5730\u3088\u304F\u3044\u3089\u308C\u308B\u76F8\u624B\u306E\u50BE\u5411\u304C\u5206\u304B\u308A\u307E\u3059\u3002")}</p>
   <div class="aisho-stars">${t.stars.map(i=>`<a href="${F2(i,t.stars)}"><img src="${o1(i,"sd")}" alt="${J(i)}"><b>${D0(i)}</b></a>`).join("")}</div>
   ${t.borrowed?`<p class="note">${P(`\u3042\u306A\u305F\u306E\u592B\u59BB\u306E\u90E8\u5C4B\u306F\u300C\u7A7A\u304D\u90E8\u5C4B\u300D\u306A\u306E\u3067\u3001\u771F\u5411\u304B\u3044\u306E\u90E8\u5C4B\uFF08${t.oppName}\uFF09\u306E${t.stars.join("\u3068")}\u304C\u9854\u3092\u51FA\u3057\u307E\u3059\u3002`)}</p>`:""}
