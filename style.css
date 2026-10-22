@@ -415,3 +415,7 @@ body.touring::before { content: ""; position: fixed; inset: 0; background: rgb(1
 .tour-btns { display: flex; justify-content: space-between; align-items: center; }
 .tour-again { font-size: 0.82rem; padding: 0; }
 @media (prefers-reduced-motion: reduce) { .board.tour.t-lines .board-lines line { animation: none; } }
+.top.tour-lift { z-index: 22; pointer-events: none; }
+.top.tour-lift .back, .top.tour-lift .logo, .top.tour-lift .nav, .top.tour-lift #reset { opacity: 0.18; }
+.top.tour-lift #levelWrap { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 10px; }
+.tour-card.bottom { top: auto; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
