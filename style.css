@@ -434,3 +434,14 @@ body.touring::before { content: ""; position: fixed; inset: 0; background: rgb(1
 .soudan-form input{font-size:1rem;padding:.7em;border-radius:8px;border:1px solid currentColor;background:transparent;color:inherit}
 .soudan-balance{font-size:1.4em;margin:.6em 0}
 .soudan-ledger{padding-left:1.2em;font-size:.9em}
+/* 10/23 ひでさん「命盤から今日の説明までスペースがありすぎる」：盤のすぐ下の物は盤に寄せる */
+main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
+.legend > summary { font-size: 0.9rem; }
+/* 紙芝居で、真向かい・三角の線だけを光らせる */
+.board.tour.t-ln .board-lines { opacity: 1; }
+/* 最初の絵の名前：絵は画面いっぱい（cover）なので、絵の縦47%の位置＝画面の真ん中から 絵の高さ×3% 上 */
+.splash-name { position: absolute; left: 0; right: 0; top: calc(50% - 0.03 * max(100vh, 100vw * 1.777)); transform: translateY(-50%); margin: 0; text-align: center;
+  font-family: var(--f-display); font-weight: 600; font-size: clamp(2rem, 9vw, 3.2rem); letter-spacing: 0.32em; padding-left: 0.32em; color: #f6ead0;
+  text-shadow: 0 0 6px rgb(7 10 26 / 0.95), 0 0 18px rgb(7 10 26 / 0.85), 0 0 28px rgb(212 175 95 / 0.35);
+  opacity: 0; transition: opacity 1.4s ease 0.5s; }
+.splash.in .splash-name { opacity: 1; }
