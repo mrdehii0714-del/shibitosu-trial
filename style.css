@@ -460,3 +460,12 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .roster th, .roster td { padding: 0.3rem 0.5rem; border-bottom: 1px solid var(--gold-soft); text-align: left; }
 /* 星の紹介の「あなたの命盤では」の部屋の名前（押すと12の部屋のその部屋へ） */
 .mine-room { color: inherit; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.2em; }
+/* 10/25 ひでさん「真ん中の星説明の時、タップしたら倍ぐらいの大きさに。枠に収まる必要はない。周りとかぶって、白い影と黄色の光の影で目立たせる」
+   → 話している星の絵を今の約2倍に。上の部屋に重ねてはみ出させ、白い縁取りと金色の光を付ける。吹き出しの位置は変えない */
+.kami .kami-img, .kami.sz-1 .kami-img, .kami.sz-2 .kami-img, .kami.sz-3 .kami-img {
+  max-width: none; position: relative; z-index: 4; pointer-events: none;
+  filter: drop-shadow(0 0 3px rgb(255 255 255 / 0.95)) drop-shadow(0 0 10px rgb(255 255 255 / 0.55)) drop-shadow(0 0 22px rgb(240 196 80 / 0.85));
+}
+.kami.sz-1 .kami-img { width: 160%; margin: -42% 0 -0.4rem; }
+.kami .kami-img, .kami.sz-2 .kami-img { width: 180%; margin: -52% 0 -0.4rem; }
+.kami.sz-3 .kami-img { width: 200%; margin: -62% 0 -0.4rem; }
