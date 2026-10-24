@@ -433,6 +433,8 @@ body.touring::before { content: ""; position: fixed; inset: 0; background: rgb(1
 .soudan-form{display:flex;flex-direction:column;gap:.6em;margin:1em 0}
 .soudan-form input{font-size:1rem;padding:.7em;border-radius:8px;border:1px solid currentColor;background:transparent;color:inherit}
 .soudan-balance{font-size:1.4em;margin:.6em 0}
+.soudan-sent{margin:1em 0;padding:1em;border:1px solid var(--gold,#c9a24a);border-radius:10px;line-height:1.7}
+.soudan-sent b{font-size:1.15em}
 .soudan-ledger{padding-left:1.2em;font-size:.9em}
 /* 10/23 ひでさん「命盤から今日の説明までスペースがありすぎる」：盤のすぐ下の物は盤に寄せる */
 main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
