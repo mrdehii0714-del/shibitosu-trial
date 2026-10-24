@@ -471,3 +471,10 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .kami.sz-1 .kami-img { width: 160%; margin: -42% 0 -0.4rem; }
 .kami .kami-img, .kami.sz-2 .kami-img { width: 180%; margin: -52% 0 -0.4rem; }
 .kami.sz-3 .kami-img { width: 200%; margin: -62% 0 -0.4rem; }
+
+/* 相談の部屋の盤（10/25）：今日の会議の線は出さない。話す星の部屋だけ光る。吹き出しは長い返事も読めるように */
+.board.consult .board-lines { display: none; }
+.board.consult .center .bubble { max-height: 46vh; overflow-y: auto; text-align: left; line-height: 1.75; }
+.consult-wait { animation: consultPulse 1.6s ease-in-out infinite; }
+@keyframes consultPulse { 50% { opacity: 0.35; } }
+.chat-log { margin-top: 0.8rem; }
