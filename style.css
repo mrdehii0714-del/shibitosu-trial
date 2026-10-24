@@ -441,9 +441,13 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .board.tour.t-ln .board-lines { opacity: 1; }
 /* 最初の絵の名前：絵は画面いっぱい（cover）なので、絵の縦47%の位置＝画面の真ん中から 絵の高さ×3% 上 */
 .splash-name { position: absolute; left: 0; right: 0; top: calc(50% - 0.03 * max(100vh, 100vw * 1.777)); transform: translateY(-50%); margin: 0; text-align: center;
-  font-family: var(--f-display); font-weight: 600; font-size: clamp(2rem, 9vw, 3.2rem); letter-spacing: 0.32em; padding-left: 0.32em; color: #f6ead0;
+  font-family: var(--f-display); color: #f6ead0;
   text-shadow: 0 0 6px rgb(7 10 26 / 0.95), 0 0 18px rgb(7 10 26 / 0.85), 0 0 28px rgb(212 175 95 / 0.35);
   opacity: 0; transition: opacity 1.4s ease 0.5s; }
+.splash-name p { margin: 0; }
+.splash-title { font-weight: 600; font-size: clamp(2rem, 9vw, 3.2rem); letter-spacing: 0.32em; padding-left: 0.32em; }
+.splash-kanji { font-size: clamp(0.95rem, 4.2vw, 1.3rem); letter-spacing: 0.5em; padding-left: 0.5em; margin-top: 0.35rem !important; opacity: 0.9; }
+.splash-sub { font-size: clamp(0.8rem, 3.6vw, 1.05rem); letter-spacing: 0.12em; margin-top: 0.9rem !important; opacity: 0.85; }
 .splash.in .splash-name { opacity: 1; }
 /* 星たちに相談する：会話と名簿 */
 .chat { display: flex; flex-direction: column; gap: 0.6rem; margin: 0.8rem 0; }
