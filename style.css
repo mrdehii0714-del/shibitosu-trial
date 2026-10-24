@@ -458,3 +458,5 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .roster-wrap { overflow-x: auto; }
 .roster { border-collapse: collapse; font-size: 0.8rem; white-space: nowrap; margin-top: 0.5rem; }
 .roster th, .roster td { padding: 0.3rem 0.5rem; border-bottom: 1px solid var(--gold-soft); text-align: left; }
+/* 星の紹介の「あなたの命盤では」の部屋の名前（押すと12の部屋のその部屋へ） */
+.mine-room { color: inherit; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 0.2em; }
