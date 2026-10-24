@@ -478,3 +478,7 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .consult-wait { animation: consultPulse 1.6s ease-in-out infinite; }
 @keyframes consultPulse { 50% { opacity: 0.35; } }
 .chat-log { margin-top: 0.8rem; }
+.soudan-hist ul { list-style: none; padding: 0; margin: 0.4rem 0; }
+.soudan-hist li { padding: 0.35rem 0; border-bottom: 1px solid var(--gold-soft); }
+.soudan-hist .link { text-align: left; }
+.day-start select { font: inherit; padding: 0.15em 0.3em; }
