@@ -59,7 +59,7 @@ a { color: inherit; }
 .confirm > div { display: flex; gap: 0.5rem; }
 
 /* 切り替え */
-.nav { max-width: 40rem; margin-inline: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.25rem; padding-bottom: 0.5rem; }
+.nav { max-width: 40rem; margin-inline: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; padding-bottom: 0.5rem; }
 .nav a { text-align: center; text-decoration: none; padding: 0.45rem 0.25rem; border-radius: 999px; font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--sky); }
 
