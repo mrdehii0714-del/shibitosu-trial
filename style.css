@@ -483,9 +483,10 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .soudan-hist .link { text-align: left; }
 .day-start select { font: inherit; padding: 0.15em 0.3em; }
 .consult-q { font-size: 0.82rem; color: var(--ink-soft); background: var(--gold-soft); border-radius: 8px; padding: 0.25rem 0.6rem; margin: 0 0 0.4rem; text-align: left; }
-/* 相談の盤：話す星の絵を極薄にして、文字の下に敷く（10/25 ひでさん「誰が喋ってるのか見えない。映像を極薄にして文字の下にかぶせる」） */
-.board.consult .kami { position: relative; }
-.board.consult .kami .kami-img { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: auto; height: 100%; max-width: 100%; opacity: 0.18; z-index: 0; pointer-events: none; }
-.board.consult .kami > :not(.kami-img) { position: relative; z-index: 1; }
-.board.consult .kami .bubble { background: transparent; box-shadow: none; }
+/* 相談の盤（10/25 ひでさん「喋る星はそのままで、それ以外の星は全部透明に。廉貞の絵が文字の後ろにはっきり見えれば読める」）
+   話している間は、話す星の部屋だけそのまま。ほかの部屋は薄くする。真ん中の大きな絵は出さず、文字の後ろに話す星の部屋が見えるように */
+.board.consult.talking .cell:not(.speaking) { opacity: 0.12; transition: opacity 0.3s; }
+.board.consult.talking .cell.speaking { opacity: 1; }
+.board.consult .kami .kami-img { display: none; }
+.board.consult .kami .bubble { background: transparent; box-shadow: none; text-shadow: 0 0 3px var(--sky), 0 0 3px var(--sky); }
 .board.consult .kami .bubble::before { display: none; }
