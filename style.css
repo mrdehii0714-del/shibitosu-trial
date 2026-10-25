@@ -494,3 +494,7 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .soudan-hist li .link { flex: 1; }
 .hist-del { font: inherit; font-size: 0.78rem; color: var(--ink-soft); background: none; border: 1px solid var(--ink-soft); border-radius: 999px; padding: 0.05rem 0.55rem; }
 .soudan-secret { display: flex; align-items: center; gap: 0.4rem; font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.6rem; }
+
+/* 友達を招待・名簿（10/26） */
+.invite-url{word-break:break-all;font-size:.85rem;padding:.5em .7em;border:1px dashed var(--gold-soft);border-radius:8px}
+.roster-off td{opacity:.45}
