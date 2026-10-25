@@ -489,7 +489,7 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .board.consult.talking .cell.speaking { opacity: 1; }
 .board.consult .kami .kami-img { display: none; }
 /* 10/26 ひでさん「ドンロウ大きく見たい」：話す星の等身大の絵を、相談の文の上に大きくはっきり出す */
-.board.consult .kami .kami-img.consult-body { display: block; width: auto; max-width: 100%; height: min(62vw, 17rem); margin: 0.2rem 0 0; object-fit: contain; opacity: 1; filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.45)); animation: pop 0.4s ease-out both; }
+.board.consult .kami .kami-img.consult-body { display: block; width: auto; max-width: 100%; height: min(62vw, 17rem); margin: 0.2rem 0 0; object-fit: contain; opacity: 1; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35)); animation: pop 0.4s ease-out both; }
 .board.consult .kami .bubble { background: transparent; box-shadow: none; text-shadow: 0 0 3px var(--sky), 0 0 3px var(--sky); }
 .board.consult .kami .bubble::before { display: none; }
 .soudan-hist li { display: flex; align-items: center; gap: 0.5rem; }
