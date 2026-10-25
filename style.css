@@ -490,3 +490,7 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .board.consult .kami .kami-img { display: none; }
 .board.consult .kami .bubble { background: transparent; box-shadow: none; text-shadow: 0 0 3px var(--sky), 0 0 3px var(--sky); }
 .board.consult .kami .bubble::before { display: none; }
+.soudan-hist li { display: flex; align-items: center; gap: 0.5rem; }
+.soudan-hist li .link { flex: 1; }
+.hist-del { font: inherit; font-size: 0.78rem; color: var(--ink-soft); background: none; border: 1px solid var(--ink-soft); border-radius: 999px; padding: 0.05rem 0.55rem; }
+.soudan-secret { display: flex; align-items: center; gap: 0.4rem; font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.6rem; }
