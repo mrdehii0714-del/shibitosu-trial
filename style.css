@@ -500,3 +500,7 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 /* 友達を招待・名簿（10/26） */
 .invite-url{word-break:break-all;font-size:.85rem;padding:.5em .7em;border:1px dashed var(--gold-soft);border-radius:8px}
 .roster-off td{opacity:.45}
+
+/* 時刻が分からない人の質問（10/26） */
+.quiz { display: flex; flex-direction: column; gap: 0.7rem; margin: 1rem 0; }
+.quiz .btn { width: 100%; padding: 1rem; font-size: 1.05rem; }
