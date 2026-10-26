@@ -504,3 +504,13 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 /* 時刻が分からない人の質問（10/26） */
 .quiz { display: flex; flex-direction: column; gap: 0.7rem; margin: 1rem 0; }
 .quiz .btn { width: 100%; padding: 1rem; font-size: 1.05rem; }
+
+/* 説明ページ（10/26） */
+.legal h2 { font-family: var(--f-display); color: var(--gold); font-size: 1.05rem; margin: 0.8rem 0 0; }
+.legal ul { margin: 0; padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.legal p { margin: 0; }
+.legal-table { display: grid; grid-template-columns: minmax(6.5em, auto) 1fr; gap: 0.5rem 1rem; margin: 0; }
+.legal-table dt { color: var(--gold); }
+.legal-table dd { margin: 0; }
+.legal-links { text-align: center; }
+.legal-links a { margin: 0 0.3rem; }
