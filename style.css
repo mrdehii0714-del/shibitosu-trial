@@ -538,3 +538,5 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .cand-more p { margin: 0; font-size: 0.92rem; line-height: 1.7; }
 .cand-more p b { display: block; color: var(--gold); }
 .cand-more .cand-pick { align-self: flex-start; }
+/* 10/26 ひでさん「白地だけのシンプルなものじゃなくて、枠を二重線で」 */
+.today-ai { border: 4px double var(--gold); }
