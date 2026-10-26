@@ -544,3 +544,6 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 /* 支払い（10/26 Stripe テスト） */
 .pay-box { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.6rem; margin: 0.4rem 0 1rem; }
 .pay-box .note { flex-basis: 100%; margin: 0; }
+
+/* 開発版の印（本番では出ない） */
+.dev-badge { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 2px); left: 50%; transform: translateX(-50%); z-index: 50; pointer-events: none; font-size: 10px; line-height: 1; padding: 3px 8px; border-radius: 999px; background: #c0392b; color: #fff; opacity: .85; }
