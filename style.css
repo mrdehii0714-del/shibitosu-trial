@@ -514,3 +514,4 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .legal-table dd { margin: 0; }
 .legal-links { text-align: center; }
 .legal-links a { margin: 0 0.3rem; }
+.legal .title { font-size: 1.6rem; line-height: 1.35; }
