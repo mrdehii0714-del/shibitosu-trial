@@ -540,3 +540,7 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .cand-more .cand-pick { align-self: flex-start; }
 /* 10/26 ひでさん「白地だけのシンプルなものじゃなくて、枠を二重線で」 */
 .today-ai { border: 4px double var(--gold); }
+
+/* 支払い（10/26 Stripe テスト） */
+.pay-box { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.6rem; margin: 0.4rem 0 1rem; }
+.pay-box .note { flex-basis: 100%; margin: 0; }
