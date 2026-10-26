@@ -451,6 +451,11 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .splash-kanji { font-size: clamp(0.95rem, 4.2vw, 1.3rem); letter-spacing: 0.5em; padding-left: 0.5em; margin-top: 0.35rem !important; opacity: 0.9; }
 .splash-sub { font-size: clamp(0.8rem, 3.6vw, 1.05rem); letter-spacing: 0.12em; margin-top: 0.9rem !important; opacity: 0.85; }
 .splash.in .splash-name { opacity: 1; }
+/* 10/26 ひでさん「PC画面だと中心がだいぶ下」→ 選択式「縦の絵を全部見せる」：絵より横長の画面では、縦の絵を切らずに真ん中へ（左右は夜空の色）。名前は絵の高さ＝画面の高さで計算し直す */
+@media (min-aspect-ratio: 941/1672) {
+  .splash img { object-fit: contain; }
+  .splash-name { top: calc(50% - 3vh); }
+}
 /* 星たちに相談する：会話と名簿 */
 .chat { display: flex; flex-direction: column; gap: 0.6rem; margin: 0.8rem 0; }
 .chat-user { align-self: flex-end; max-width: 85%; background: var(--gold-soft); border-radius: 12px 12px 2px 12px; padding: 0.6rem 0.8rem; }
