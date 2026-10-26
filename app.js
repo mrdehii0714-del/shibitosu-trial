@@ -98,12 +98,12 @@ var xr=Object.create;var Pu=Object.defineProperty;var pr=Object.getOwnPropertyDe
     </fieldset>
     <label class="field"><span>\u751F\u307E\u308C\u305F\u6642\u523B</span>
       <select id="hour">
-        <option value="">\u9078\u3093\u3067\u304F\u3060\u3055\u3044</option>${e}
-        <option value="unknown" ${n.hour==null&&n.date?"selected":""}>\u5206\u304B\u3089\u306A\u3044</option>
+        <option value="">\u9078\u3093\u3067\u304F\u3060\u3055\u3044</option>
+        <option value="unknown" ${n.hour==null&&n.date?"selected":""}>\u5206\u304B\u3089\u306A\u3044</option>${e}
       </select>
     </label>
     <label class="field" id="bandWrap" hidden><span>\u3060\u3044\u305F\u3044\u306E\u6642\u9593\u5E2F</span>
-      <select id="band">${t}<option value="" ${n.date&&n.hour==null&&!n.band?"selected":""}>\u307E\u3063\u305F\u304F\u5206\u304B\u3089\u306A\u3044</option></select>
+      <select id="band"><option value="" ${n.date&&n.hour==null&&!n.band?"selected":""}>\u307E\u3063\u305F\u304F\u5206\u304B\u3089\u306A\u3044</option>${t}</select>
       <small>\u6642\u9593\u5E2F\u304B\u3089\u3001\u3042\u306A\u305F\u306E\u661F\u306E\u5019\u88DC\u3092\u51FA\u3057\u307E\u3059\u3002</small>
     </label>
     <fieldset class="field"><legend>\u6027\u5225</legend>
