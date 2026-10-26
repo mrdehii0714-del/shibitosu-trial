@@ -527,6 +527,8 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .cand-wrap { display: flex; flex-direction: column; }
 .cand[aria-expanded="true"] { border-color: var(--gold); border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .cand-open { color: var(--gold); font-size: 0.8rem; }
+.cand-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.8rem; margin-top: 0.35rem; }
+.cand:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .cand-more { background: var(--card); border: 1px solid var(--gold); border-top: 0; border-radius: 0 0 var(--r) var(--r); padding: 0.4rem 0.9rem 0.9rem; display: flex; flex-direction: column; gap: 0.6rem; }
 .cand-more p { margin: 0; font-size: 0.92rem; line-height: 1.7; }
 .cand-more p b { display: block; color: var(--gold); }
