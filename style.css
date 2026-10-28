@@ -549,8 +549,11 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 /* 開発版の印（本番では出ない） */
 .dev-badge { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 2px); left: 50%; transform: translateX(-50%); z-index: 50; pointer-events: none; font-size: 10px; line-height: 1; padding: 3px 8px; border-radius: 999px; background: #c0392b; color: #fff; opacity: .85; }
 /* 説明動画（10/28） */
-.intro { position: fixed; inset: 0; z-index: 60; background: rgba(7, 10, 26, 0.95); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; padding: 1rem; }
-.intro video { width: min(100%, calc((100vh - 6rem) * 9 / 16)); width: min(100%, calc((100dvh - 6rem) * 9 / 16)); height: auto; aspect-ratio: 9 / 16; border-radius: 12px; background: #000; }
-.intro-btns { display: flex; gap: 1.25rem; align-items: center; }
-.intro .link { color: #fff; }
+.vintro { position: fixed; inset: 0; z-index: 60; background: rgba(7, 10, 26, 0.95); display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.vintro-ask { max-width: 26rem; padding: 1.5rem 1.25rem; text-align: center; display: flex; flex-direction: column; gap: 0.75rem; }
+.vintro-movie { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+.vintro [hidden] { display: none; }
+.vintro video { width: min(100%, calc((100vh - 6rem) * 9 / 16)); width: min(100%, calc((100dvh - 6rem) * 9 / 16)); height: auto; aspect-ratio: 9 / 16; border-radius: 12px; background: #000; }
+.vintro-btns { display: flex; gap: 1.25rem; align-items: center; justify-content: center; }
+.vintro-movie .link { color: #fff; }
 body.intro-on { overflow: hidden; }
