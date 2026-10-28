@@ -558,3 +558,4 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .vintro-movie .link { color: #fff; }
 body.intro-on { overflow: hidden; }
 .cell-stars a { white-space: nowrap; } /* ひらがなの名前が途中で折れないように（10/28） */
+.face { width: 1.7em; height: 1.7em; object-fit: contain; vertical-align: middle; margin-right: 0.15em; } /* 名前の隣の小さな顔（10/28） */
