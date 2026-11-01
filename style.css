@@ -563,3 +563,10 @@ body.intro-on { overflow: hidden; }
 /* 会議の声の切り替え（10/29） */
 .center .kami-snd { margin-top: 0.3rem; font: inherit; font-size: 0.68rem; color: var(--ink-soft); background: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.15rem 0.6rem; cursor: pointer; }
 .center .kami-snd[aria-pressed="true"] { color: var(--gold); border-color: var(--gold); }
+
+/* 11/2 星の言葉への反応ボタン（好き・笑った・ハッとした・ちょっと違う） */
+.consult-react { display: flex; justify-content: center; gap: 0.35rem; margin: 0.45rem 0 0.1rem; flex-wrap: wrap; }
+.consult-react .react { display: inline-flex; flex-direction: column; align-items: center; gap: 0.05rem; min-width: 3.4rem; padding: 0.25rem 0.35rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card); font-size: 1.05rem; line-height: 1.1; cursor: pointer; }
+.consult-react .react small { font-size: 0.62rem; color: var(--ink-soft); }
+.consult-react .react.on { border-color: #c96a2b; background: #fdf0e4; box-shadow: 0 0 0 1px #c96a2b inset; }
+.react-note { font-size: 0.66rem; color: var(--ink-soft); margin: 0.1rem 0 0; text-align: center; }
