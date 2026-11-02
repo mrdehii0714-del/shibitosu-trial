@@ -562,6 +562,8 @@ body.intro-on { overflow: hidden; }
 
 /* 会議の声の切り替え（10/29） */
 .center .kami-snd { margin-top: 0.3rem; font: inherit; font-size: 0.68rem; color: var(--ink-soft); background: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.15rem 0.6rem; cursor: pointer; }
+.center .snd-note { margin: 0.2rem 0 0; font-size: 0.62rem; color: var(--ink-soft); min-height: 0; }
+.center .snd-note:empty { display: none; }
 .center .kami-snd[aria-pressed="true"] { color: var(--gold); border-color: var(--gold); }
 
 /* 11/2 星の言葉への反応ボタン（好き・笑った・ハッとした・ちょっと違う） */
