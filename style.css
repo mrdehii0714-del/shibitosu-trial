@@ -596,3 +596,6 @@ body.intro-on { overflow: hidden; }
 @keyframes thHop { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-0.35em); } }
 .center .snd-note.busy { font-size: 0.9rem; font-weight: 700; color: var(--gold); margin: 0.3rem 0; }
 @media (prefers-reduced-motion: reduce) { .th-orbit, .th-dots i, .th-s { animation: none; } }
+/* 11/3 ひでさん「トゥデイのキャラクターも星との相談と同じようにちょっと動かして」：今日の会議で話す星もゆっくり上下に浮く */
+.board:not(.consult) .kami .kami-img { animation: kamiFloat 3.6s ease-in-out 0.4s infinite; }
+@media (prefers-reduced-motion: reduce) { .board:not(.consult) .kami .kami-img { animation: none; } }
