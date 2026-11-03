@@ -495,7 +495,10 @@ main > .mood-lost, main > .legend, main > .meet-all { margin-top: -0.9rem; }
 .board.consult.talking .cell.speaking { opacity: 1; }
 .board.consult .kami .kami-img { display: none; }
 /* 10/26 ひでさん「ドンロウ大きく見たい」：話す星の等身大の絵を、相談の文の上に大きくはっきり出す */
-.board.consult .kami .kami-img.consult-body { display: block; width: auto; max-width: 100%; height: min(62vw, 17rem); margin: 0.2rem 0 0; object-fit: contain; opacity: 1; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35)); animation: pop 0.4s ease-out both; }
+.board.consult .kami .kami-img.consult-body { display: block; width: auto; max-width: 100%; height: min(62vw, 17rem); margin: 0.2rem 0 0; object-fit: contain; opacity: 1; filter: drop-shadow(0 0 3px rgb(255 255 255 / 0.95)) drop-shadow(0 0 10px rgb(255 255 255 / 0.55)) drop-shadow(0 0 22px rgb(240 196 80 / 0.85)); animation: pop 0.4s ease-out both, kamiFloat 3.6s ease-in-out 0.4s infinite; }
+/* 11/3 ひでさん「Todayと同じように光のぼかし」「ちょっと動かす、浮いたり」：今日の画面と同じ白と金の光・ゆっくり上下に浮く */
+@keyframes kamiFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@media (prefers-reduced-motion: reduce) { .board.consult .kami .kami-img.consult-body { animation: pop 0.4s ease-out both; } }
 .board.consult .kami .bubble { background: transparent; box-shadow: none; text-shadow: 0 0 3px var(--sky), 0 0 3px var(--sky); }
 .board.consult .kami .bubble::before { display: none; }
 .soudan-hist li { display: flex; align-items: center; gap: 0.5rem; }
@@ -577,3 +580,19 @@ body.intro-on { overflow: hidden; }
 .center .kami-mode .kami-aimode { white-space: nowrap; font: inherit; font-size: 0.68rem; color: var(--ink-soft); background: none; border: 0; padding: 0.18rem 0.65rem; cursor: pointer; }
 .center .kami-mode .kami-aimode[aria-pressed="true"] { background: var(--gold); color: #fff; font-weight: 700; }
 .center .ai-badge { display: inline-block; margin: 0 0 0.2rem; font-size: 0.62rem; font-weight: 700; color: #fff; background: var(--gold); border-radius: 999px; padding: 0.08rem 0.6rem; }
+
+/* 11/3 ひでさん「待ち時間が固まっているよう」「声も作っていますが、その時はもっと文字を大きくして」：考え中（回る星・はねる点）と、声を作っている時の大きな知らせ */
+.thinking { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; padding: 0.6rem 0; }
+.th-orbit { position: relative; width: 3.4rem; height: 3.4rem; animation: thSpin 2.4s linear infinite; }
+.th-orbit i { position: absolute; left: 50%; top: 50%; font-style: normal; color: var(--gold); font-size: 1.1rem; text-shadow: 0 0 8px rgb(240 196 80 / 0.9); }
+.th-orbit i:nth-child(1) { transform: translate(-50%, -50%) translateY(-1.5rem); }
+.th-orbit i:nth-child(2) { transform: translate(-50%, -50%) rotate(120deg) translateY(-1.5rem); font-size: 0.85rem; }
+.th-orbit i:nth-child(3) { transform: translate(-50%, -50%) rotate(240deg) translateY(-1.5rem); }
+@keyframes thSpin { to { transform: rotate(360deg); } }
+.th-t { margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+.th-s { margin: 0; font-size: 0.78rem; color: var(--ink-soft); animation: consultPulse 1.6s ease-in-out infinite; }
+.th-dots i { display: inline-block; font-style: normal; animation: thHop 1s ease-in-out infinite; }
+.th-dots i:nth-child(2) { animation-delay: 0.15s; } .th-dots i:nth-child(3) { animation-delay: 0.3s; }
+@keyframes thHop { 0%, 60%, 100% { transform: none; } 30% { transform: translateY(-0.35em); } }
+.center .snd-note.busy { font-size: 0.9rem; font-weight: 700; color: var(--gold); margin: 0.3rem 0; }
+@media (prefers-reduced-motion: reduce) { .th-orbit, .th-dots i, .th-s { animation: none; } }
