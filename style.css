@@ -599,3 +599,7 @@ body.intro-on { overflow: hidden; }
 /* 11/3 ひでさん「トゥデイのキャラクターも星との相談と同じようにちょっと動かして」：今日の会議で話す星もゆっくり上下に浮く */
 .board:not(.consult) .kami .kami-img { animation: kamiFloat 3.6s ease-in-out 0.4s infinite; }
 @media (prefers-reduced-motion: reduce) { .board:not(.consult) .kami .kami-img { animation: none; } }
+
+/* 支払いの知らせ（11/4 ひでさん「この地味さは気づかんぞ」）：ボタンのすぐ下に目立つ枠 */
+.pay-alert { margin: 0.6rem 0; padding: 0.8rem 1rem; border: 2px solid var(--gold); border-radius: 10px; background: var(--gold-soft); font-weight: 700; font-size: 1.02rem; line-height: 1.6; }
+.pay-alert .link { font-weight: 700; margin-top: 0.3rem; }
