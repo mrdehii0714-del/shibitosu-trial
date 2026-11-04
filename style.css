@@ -605,3 +605,8 @@ body.intro-on { overflow: hidden; }
 .pay-alert .link { font-weight: 700; margin-top: 0.3rem; }
 
 .rooms .face { width: 3.15em; height: 3.15em; } /* 11/5 ひでさん「キャラを1.5倍」（12の部屋の部屋の説明） */
+.pair-top { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin: 1rem 0; }
+.pair-one { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.2rem; }
+.pair-one img { width: 5.5rem; height: 5.5rem; object-fit: contain; }
+.pair-one span { font-family: var(--f-display); }
+.pair-x { font-size: 1.6rem; color: var(--gold); }
