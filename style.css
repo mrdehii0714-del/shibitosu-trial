@@ -603,3 +603,5 @@ body.intro-on { overflow: hidden; }
 /* 支払いの知らせ（11/4 ひでさん「この地味さは気づかんぞ」）：ボタンのすぐ下に目立つ枠 */
 .pay-alert { margin: 0.6rem 0; padding: 0.8rem 1rem; border: 2px solid var(--gold); border-radius: 10px; background: var(--gold-soft); font-weight: 700; font-size: 1.02rem; line-height: 1.6; }
 .pay-alert .link { font-weight: 700; margin-top: 0.3rem; }
+
+.rooms .face { width: 3.15em; height: 3.15em; } /* 11/5 ひでさん「キャラを1.5倍」（12の部屋の部屋の説明） */
