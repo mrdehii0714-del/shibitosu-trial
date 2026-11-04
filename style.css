@@ -604,7 +604,10 @@ body.intro-on { overflow: hidden; }
 .pay-alert { margin: 0.6rem 0; padding: 0.8rem 1rem; border: 2px solid var(--gold); border-radius: 10px; background: var(--gold-soft); font-weight: 700; font-size: 1.02rem; line-height: 1.6; }
 .pay-alert .link { font-weight: 700; margin-top: 0.3rem; }
 
-.rooms .face { width: 3.15em; height: 3.15em; } /* 11/5 ひでさん「キャラを1.5倍」（12の部屋の部屋の説明） */
+/* 11/5 ひでさん「他のページのキャラもギリギリまで大きく」→ 名前の隣の顔を全部のページで 2.1em → 3.6em */
+.face { width: 3.6em; height: 3.6em; }
+/* 11/5 タブが4つとも長い名前になり2行に折れたので、1行に収める */
+.nav a { white-space: nowrap; font-size: clamp(0.68rem, 3.4vw, 0.9rem); padding-inline: 0.1rem; letter-spacing: -0.02em; }
 .pair-top { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin: 1rem 0; }
 .pair-one { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.2rem; }
 .pair-one img { width: 5.5rem; height: 5.5rem; object-fit: contain; }
