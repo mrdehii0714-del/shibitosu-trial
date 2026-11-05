@@ -613,3 +613,13 @@ body.intro-on { overflow: hidden; }
 .pair-one img { width: 5.5rem; height: 5.5rem; object-fit: contain; }
 .pair-one span { font-family: var(--f-display); }
 .pair-x { font-size: 1.6rem; color: var(--gold); }
+
+/* 11/6 ひでさん「スマホ　配置が左より」：相性・ペットの会議は盤の外に出すので、今日の盤用のはみ出す大きな絵・広い吹き出しをやめ、枠の中で真ん中にそろえる */
+.meet-box { overflow: hidden; align-items: center; text-align: center; }
+.meet-box .kami { display: flex; flex-direction: column; align-items: center; width: 100%; }
+.meet-box .kami .kami-img, .meet-box .kami.sz-2 .kami-img { width: auto; max-width: 100%; height: min(62vw, 17rem); margin: 0.2rem 0 0; object-fit: contain; animation: kamiFloat 3.6s ease-in-out infinite; }
+.meet-box .kami .bubble { width: 100%; max-width: 100%; box-sizing: border-box; }
+.meet-box > p, .meet-box .note { width: 100%; }
+.meet-box .meet-go { align-self: stretch; }
+.pair-basic p b { display: flex; align-items: center; gap: 0.3rem; }
+@media (prefers-reduced-motion: reduce) { .meet-box .kami .kami-img { animation: none; } }
