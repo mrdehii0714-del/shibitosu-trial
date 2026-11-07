@@ -629,6 +629,6 @@ body.intro-on { overflow: hidden; }
 .pair-photo { position: relative; z-index: 2; display: block; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid var(--gold); box-shadow: 0 0 0 3px var(--card), 0 4px 14px rgb(0 0 0 / 0.25); cursor: pointer; }
 .pair-one .pair-photo img { width: 100%; height: 100%; object-fit: cover; }
 .pair-stars { position: absolute; z-index: 3; top: 52%; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; }
-.pair-one .pair-stars img { width: calc(var(--ph) * 0.62); height: calc(var(--ph) * 0.62); margin: 0 calc(var(--ph) * -0.09); filter: drop-shadow(0 0 2px rgb(255 255 255 / 0.9)) drop-shadow(0 2px 6px rgb(0 0 0 / 0.35)); }
+.pair-one .pair-stars img { width: calc(var(--ph) * 0.62); height: calc(var(--ph) * 0.62); margin: 0 calc(var(--ph) * -0.09); }
 .pair-one .pair-stars a:only-child img { width: calc(var(--ph) * 0.72); height: calc(var(--ph) * 0.72); }
 .photo-add, .photo-del { font-size: 0.75rem; cursor: pointer; }
