@@ -625,10 +625,12 @@ body.intro-on { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { .meet-box .kami .kami-img { animation: none; } }
 /* 11/7 ひでさん「相手のところに写真」→ 選択式「星の上に大きく」：丸い写真を前に大きく、星は小さく後ろにのぞかせる */
 .pair-pic { position: relative; display: flex; flex-direction: column; align-items: center; }
-.has-photo .pair-pic { width: 7.5rem; height: 7.5rem; justify-content: center; margin-bottom: 2.4rem; }
+.has-photo .pair-pic { width: 7.5rem; height: 7.5rem; justify-content: center; margin-bottom: 5rem; }
+.pair-one .pair-stars a:only-child img { width: min(9.5rem, 30vw); height: min(9.5rem, 30vw); }
 .pair-photo { position: relative; z-index: 2; display: block; width: 6.4rem; height: 6.4rem; border-radius: 50%; overflow: hidden; border: 3px solid var(--gold); box-shadow: 0 0 0 3px var(--card), 0 4px 14px rgb(0 0 0 / 0.25); cursor: pointer; }
 .pair-one .pair-photo img { width: 100%; height: 100%; object-fit: cover; }
 /* 11/7 ひでさん「星は下のほうに写真に被っていいので、写真より上に表示」「もうちょっと大きめ」：星は写真の下の方に重ねて前に出す */
-.pair-stars { position: absolute; z-index: 3; bottom: -2.6rem; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; pointer-events: auto; }
-.pair-one .pair-stars img { width: 4.6rem; height: 4.6rem; margin: 0 -0.7rem; filter: drop-shadow(0 0 2px rgb(255 255 255 / 0.9)) drop-shadow(0 2px 6px rgb(0 0 0 / 0.35)); }
+/* 11/7 ひでさん「5倍大きく」：横に2人並ぶ幅（画面の半分）に収まるいちばん大きい大きさ */
+.pair-stars { position: absolute; z-index: 3; bottom: -5.2rem; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; pointer-events: auto; }
+.pair-one .pair-stars img { width: min(7.6rem, 24vw); height: min(7.6rem, 24vw); margin: 0 -1.6rem; filter: drop-shadow(0 0 2px rgb(255 255 255 / 0.9)) drop-shadow(0 2px 6px rgb(0 0 0 / 0.35)); }
 .photo-add, .photo-del { font-size: 0.75rem; cursor: pointer; }
