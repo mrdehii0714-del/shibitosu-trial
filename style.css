@@ -623,3 +623,11 @@ body.intro-on { overflow: hidden; }
 .meet-box .meet-go { align-self: stretch; }
 .pair-basic p b { display: flex; align-items: center; gap: 0.3rem; }
 @media (prefers-reduced-motion: reduce) { .meet-box .kami .kami-img { animation: none; } }
+/* 11/7 ひでさん「相手のところに写真」→ 選択式「星の上に大きく」：丸い写真を前に大きく、星は小さく後ろにのぞかせる */
+.pair-pic { position: relative; display: flex; flex-direction: column; align-items: center; }
+.has-photo .pair-pic { width: 7.5rem; height: 7.5rem; justify-content: center; }
+.pair-photo { position: relative; z-index: 2; display: block; width: 6.4rem; height: 6.4rem; border-radius: 50%; overflow: hidden; border: 3px solid var(--gold); box-shadow: 0 0 0 3px var(--card), 0 4px 14px rgb(0 0 0 / 0.25); cursor: pointer; }
+.pair-one .pair-photo img { width: 100%; height: 100%; object-fit: cover; }
+.pair-stars { position: absolute; z-index: 1; top: -0.6rem; right: -1.1rem; display: flex; }
+.pair-one .pair-stars img { width: 3.2rem; height: 3.2rem; margin-left: -1.2rem; }
+.photo-add, .photo-del { font-size: 0.75rem; cursor: pointer; }
