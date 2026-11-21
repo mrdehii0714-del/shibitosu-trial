@@ -603,32 +603,3 @@ body.intro-on { overflow: hidden; }
 /* 支払いの知らせ（11/4 ひでさん「この地味さは気づかんぞ」）：ボタンのすぐ下に目立つ枠 */
 .pay-alert { margin: 0.6rem 0; padding: 0.8rem 1rem; border: 2px solid var(--gold); border-radius: 10px; background: var(--gold-soft); font-weight: 700; font-size: 1.02rem; line-height: 1.6; }
 .pay-alert .link { font-weight: 700; margin-top: 0.3rem; }
-
-/* 11/5 ひでさん「他のページのキャラもギリギリまで大きく」→ 名前の隣の顔を全部のページで 2.1em → 3.6em */
-.face { width: 3.6em; height: 3.6em; }
-/* 11/5 タブが4つとも長い名前になり2行に折れたので、1行に収める */
-.nav a { white-space: nowrap; font-size: clamp(0.68rem, 3.4vw, 0.9rem); padding-inline: 0.1rem; letter-spacing: -0.02em; }
-.pair-top { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin: 1rem 0; }
-.pair-one { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.2rem; }
-.pair-one img { width: 5.5rem; height: 5.5rem; object-fit: contain; }
-.pair-one span { font-family: var(--f-display); }
-.pair-x { font-size: 1.6rem; color: var(--gold); }
-
-/* 11/6 ひでさん「スマホ　配置が左より」：相性・ペットの会議は盤の外に出すので、今日の盤用のはみ出す大きな絵・広い吹き出しをやめ、枠の中で真ん中にそろえる */
-.meet-box { overflow: hidden; align-items: center; text-align: center; }
-.meet-box .kami { display: flex; flex-direction: column; align-items: center; width: 100%; }
-.meet-box .kami .kami-img, .meet-box .kami.sz-2 .kami-img { width: auto; max-width: 100%; height: min(62vw, 17rem); margin: 0.2rem 0 0; object-fit: contain; animation: kamiFloat 3.6s ease-in-out infinite; }
-.meet-box .kami .bubble { width: 100%; max-width: 100%; box-sizing: border-box; }
-.meet-box > p, .meet-box .note { width: 100%; }
-.meet-box .meet-go { align-self: stretch; }
-.pair-basic p b { display: flex; align-items: center; gap: 0.3rem; }
-@media (prefers-reduced-motion: reduce) { .meet-box .kami .kami-img { animation: none; } }
-/* 11/7 ひでさん「相手のところに写真」→ 選択式「星の上に大きく」。同日ひでさんの手描き：大きな丸い写真の下半分に、星2人を横に並べて重ねる（星は写真の約6割の大きさ・少し重なり合う） */
-.pair-pic { position: relative; display: flex; flex-direction: column; align-items: center; }
-.has-photo .pair-pic { --ph: min(9.5rem, 40vw); width: var(--ph); height: var(--ph); margin-bottom: calc(var(--ph) * 0.2); }
-.pair-photo { position: relative; z-index: 2; display: block; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid var(--gold); box-shadow: 0 0 0 3px var(--card), 0 4px 14px rgb(0 0 0 / 0.25); cursor: pointer; }
-.pair-one .pair-photo img { width: 100%; height: 100%; object-fit: cover; }
-.pair-stars { position: absolute; z-index: 3; top: 52%; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; }
-.pair-one .pair-stars img { width: calc(var(--ph) * 0.62); height: calc(var(--ph) * 0.62); margin: 0 calc(var(--ph) * -0.09); }
-.pair-one .pair-stars a:only-child img { width: calc(var(--ph) * 0.72); height: calc(var(--ph) * 0.72); }
-.photo-add, .photo-del { font-size: 0.75rem; cursor: pointer; }
